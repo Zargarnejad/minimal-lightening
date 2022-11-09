@@ -1,0 +1,1 @@
+This project made by me as a final project for ReDI school and also it is my final project for UI/UX course. 
