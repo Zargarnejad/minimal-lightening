@@ -2,3 +2,61 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+.pageHead{
+    width: 100%;
+    height:auto;
+    
+}
+.topTitle{
+    background-color:#3C3633 ;
+    color:#F8EDE5;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.mainBtn{
+    color:#F8EDE5;
+    background-color: #3C3633;
+
+}
+.navContainer{
+    background-color: #F8EDE5;
+    color: #3C3633;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.navList{
+padding: 1rem 0;
+display: flex;
+align-items: center;
+font-size: 1.5rem;
+}
+.navItem{
+list-style: none;
+margin-right: 2rem;
+}
+.navItem a{
+    text-decoration: none;
+    color: #3C3633;
+}
+.hero{
+    background-image:url(./images/hero.jpg);
+    align-items: center;
+    width: 100%;
+    min-height:100vh;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.hero p,h1,button {
+    align-self: center;
+}
