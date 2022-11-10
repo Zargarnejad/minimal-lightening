@@ -1,3 +1,6 @@
+
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -6,21 +9,35 @@ body{
     font-family: 'Lato', sans-serif;
 
 }
+.mainContainer{
+    margin-left:15%;
+    margin-right: 15%;
+}
 .pageHead{
-    width: 100%;
-    height:auto;
-    
+    width: 100%;    
 }
 .topTitle{
     background-color:#3C3633 ;
     color:#F8EDE5;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    min-height: 40px;
+    box-sizing: content-box;
+}
+.topTitle p{
+    padding: 0.5rem;
 }
 
 .mainBtn{
     color:#F8EDE5;
     background-color: #3C3633;
+    box-sizing:content-box;
+    min-height: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border:none;
 
 }
 .navContainer{
@@ -29,13 +46,20 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 50px;
 
+}
+.logoInfo{
+    width: 120px;
+    margin-left: 1rem;
+    align-items: center;
+    padding: 0 !important ;
 }
 .navList{
 padding: 1rem 0;
 display: flex;
 align-items: center;
-font-size: 1.5rem;
+font-size: 1.1rem;
 }
 .navItem{
 list-style: none;
@@ -59,4 +83,95 @@ margin-right: 2rem;
 }
 .hero p,h1,button {
     align-self: center;
+    color:white;
+    font-weight: 500;
+}
+.footerContainer{
+    background-color: #3C3633;
+    color: #F8EDE5;
+    display: flex;
+    flex-direction: row;
+}
+.showProductCategories{
+    /* display:flex; */
+    background-color: white;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+.productSCategoriesShowPart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color:rgb(82, 63, 63);
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    /* padding: 2rem; */
+    height: 100%;
+    width: 100%;
+}
+.productCard{
+    background-color:white;
+    border-radius: 10px;
+    width: 22%;
+    height: 90%;
+    box-shadow: red;
+
+    
+}
+.productCard p{
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    align-items: center;
+    
+}
+.categorySampleImage{
+    height: 75%;
+    background-color: #b85e1d;
+    border-radius: 10px 10px 0 0 ;
+}
+.bestSelling{
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    
+}
+.bestSelleindInfo{
+    background-color: #F8EDE5;
+    color: black;
+    width: 50%;
+
+}
+.bestSellingPhoto{
+    background-image: url(./images/bestseller.jpg);
+    background-size: cover;
+    background-position: center;
+    width:50%;
+    background-color: #b85e1d;
+}
+.markusPhoto{
+    background-image: url(./images/markus-homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    width:50%;
+
+}
+.CustomizationHomepagePhoto{
+    background-image: url(./images/customization.webp);
+    background-size:cover;
+    background-position:center;
+    width:65%;
+
+}
+.footerContainer{
+    height: 300px;
 }
