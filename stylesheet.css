@@ -5,8 +5,44 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #f6f6f6;
+    color: #E7E7E7;
+}
 
+h1 {
+    font-weight: lighter;
+    font-size: 100px;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 62px;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: 0px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 35px;
+    letter-spacing: 0.25px;
+    color: black;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 0px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 21px;
+    letter-spacing: 0.15px;
 }
 
 .mainContainer {
@@ -60,12 +96,12 @@ body {
     align-items: center;
     padding: 0 !important;
 }
-.footerlogoInfo{
+
+.footerlogoInfo {
     width: 120px;
     margin-left: 1rem;
     align-items: center;
     padding: 0 !important;
-    color:#F8EDE5
 }
 
 
@@ -96,19 +132,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    border-radius: 0 0 10px 10px;
 
 }
 
 .hero p,
-h1,
+h2,
 button {
     align-self: center;
     color: white;
     font-weight: 500;
+    padding-top: 0.6rem;
 }
-.mainTitle{
-    color:#3C3633;
-    font-size: xx-large;
+
+.hero button {
+    margin-top: 0.6rem;
 }
 
 .footerContainer {
@@ -145,16 +183,18 @@ button {
     border-radius: 10px;
     width: 22%;
     height: 90%;
-    box-shadow:1px 3px #E4E2E2;
+    box-shadow: 1px 4px #c5c3c3;
 
 
 }
 
-.productCard p {
+.categoryName {
     color: black;
     text-align: center;
     font-size: 1.1rem;
     align-items: center;
+    box-sizing: border-box;
+
 
 }
 
@@ -162,26 +202,64 @@ button {
     height: 75%;
     background-color: #b85e1d;
     border-radius: 10px 10px 0 0;
-    
+    background-size: cover;
+
+}
+.photoShowFormat{
+    width: 100%;    
+    height: 100%;
+    border-radius: 10px 10px 0 0 ;
+
 }
 
 .bestSelling {
-    background-color:whit;
+    background-color: white;
     width: 100%;
     height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 60px;
+}
 
+.bestSelling h4 {
+    color: black;
+    align-items: center;
+    text-align: left;
+    margin-top: 25%;
+    margin-left: 2rem;
+}
 
+.bestSelling p {
+    color: black;
+    align-items: center;
+    text-align: left;
+    padding-top: 0.75rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.bestSelling button {
+
+    align-items: center;
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.bestSelling a{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-size: 15px;
+    padding-top: 3rem;
 }
 
 .bestSelleindInfo {
     background-color: #F8EDE5;
     color: black;
     width: 50%;
+    border-radius: 10px 0 0 10px;
 
 }
 
@@ -190,7 +268,8 @@ button {
     background-size: cover;
     background-position: center;
     width: 50%;
-    background-color:white;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
 }
 
 .markusPhoto {
@@ -198,6 +277,7 @@ button {
     background-size: cover;
     background-position: center;
     width: 50%;
+    border-radius: 0 10px 10px 0;
 
 }
 
@@ -206,6 +286,14 @@ button {
     background-size: cover;
     background-position: center;
     width: 65%;
+    border-radius: 10px 0 0 10px;
+}
+.customizationInfo{
+    background-color: #F8EDE5;
+    color: black;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+
 }
 
 .footerContainer {
@@ -215,12 +303,13 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.foooterList {
+.footerList {
     padding: 1rem 0;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     font-size: 1.1rem;
 }
 
