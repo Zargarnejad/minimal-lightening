@@ -62,32 +62,41 @@
                 <div class="hero">
                     <p>Special Minimal Lightening Designed By</p>
                     <h3> Markus Johansen</h3>
-                    <button class="mainBtn">BUY NOW</button>
+                    <button class="mainBtn" id="heroBuyBtn">BUY NOW</button>
                 </div>
             </div>
         </header>
         <section class="showProductCategories">
 
+
             <h4>Collections</h4>
             <br>
             <div class="productSCategoriesShowPart">
-                <div class="productCard">
-                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/card1Img1.jpg"></div>
-                    <p class="categoryName">Blockchain Collections</p>
-                </div>
-                <div class="productCard">
+                    <div onmouseover="productCardMouseOver(1)" onmouseout="productCardMouseOut(1)" class="productCard"
+                        id="ColCard1">
+                        <div class="categorySampleImage"><img id="card1image" class="photoShowFormat"
+                                src="./images/ColF1P1.png"></div>
+                        <p id="card1name" class="categoryoneLineName">Blockchain Collections</p>
+                    </div>
+                <div onmouseover="productCardMouseOver(2)" onmouseout="productCardMouseOut(2)" class="productCard"
+                    id="ColCard2">
 
-                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/card2Img1.jpg"></div>
-                    <p class="categoryName">Hello Dude Collections</p>
+                    <div class="categorySampleImage"><img id="card2image" class="photoShowFormat"
+                            src="./images/ColF2P1.png"></div>
+                    <p id="card2name" class="categoryoneLineName">Hello Dude Collections</p>
                 </div>
-                <div class="productCard">
+                <div onmouseover="productCardMouseOver(3)" onmouseout="productCardMouseOut(3)" class="productCard"
+                    id="ColCard3">
 
-                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/card3Img1.jpg"></div>
-                    <p class="categoryName">Cirrata Collections</p>
+                    <div class="categorySampleImage"><img id="card3image" class="photoShowFormat"
+                            src="./images/ColF3P1.png"></div>
+                    <p id="card3name" class="categoryoneLineName">Cirrata Collections</p>
                 </div>
-                <div class="productCard">
-                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/card4Img1.jpg"></div>
-                    <p class="categoryName">Solstic Collections</p>
+                <div onmouseover="productCardMouseOver(4)" onmouseout="productCardMouseOut(4)" class="productCard"
+                    id="ColCard4">
+                    <div class="categorySampleImage"><img id="card4image" class="photoShowFormat"
+                            src="./images/ColF4P1.jpg"></div>
+                    <p id="card4name" class="categoryoneLineName">Solstic Collections</p>
                 </div>
             </div>
         </section>
@@ -106,7 +115,7 @@
 
         </section>
         <section class="showProductCategories">
-            <div>
+            <div class="title">
                 <h4>New Collection</h4>
                 <a>SEE MORE </a>
             </div>
@@ -114,24 +123,24 @@
             <div class="productSCategoriesShowPart">
                 <div class="productCard">
 
-                    <div class="categorySampleImage"></div>
+                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/NewColF1P1.png"></div>
                     <p class="categoryName">Blockchain Collections</p>
                     <p class="categoryName">EUR 1,542.00</p>
                 </div>
                 <div class="productCard">
 
-                    <div class="categorySampleImage"></div>
+                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/NewColF2P1.png"></div>
                     <p class="categoryName">Hello Dude Collections</p>
                     <p class="categoryName">EUR 1,542.00</p>
                 </div>
                 <div class="productCard">
 
-                    <div class="categorySampleImage"></div>
+                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/NewColF3P1.png"></div>
                     <p class="categoryName">Cirrata Collections</p>
                     <p class="categoryName">EUR 1,542.00</p>
                 </div>
                 <div class="productCard">
-                    <div class="categorySampleImage"></div>
+                    <div class="categorySampleImage"><img class="photoShowFormat" src="./images/NewColF4P1.png"></div>
                     <p class="categoryName">Solstic Collections</p>
                     <p class="categoryName">EUR 1,542.00</p>
 
@@ -145,7 +154,7 @@
                 <p>You can order a custom design for your favorite lamp.
                     If you not like any of the designs ....
                 </p>
-                <a >READ MORE</a>
+                <a>READ MORE</a>
             </div>
 
         </section>
@@ -164,7 +173,7 @@
 
 
                 </p>
-                <a >READ MORE</a>
+                <a>READ MORE</a>
             </div>
             <div class="markusPhoto"></div>
 
@@ -172,7 +181,7 @@
 
         <footer class="footerContainer">
 
-            <div class="footerList"> <img class="footerList footerlogoInfo" src="./images/logo.png" /></div>
+            <div class="footerList"> <img class="footerList footerlogoInfo" src="./images/FootelLogo.png" /></div>
             <div>
                 <ul class="footerList">
                     <li class="footerItem">
@@ -192,14 +201,19 @@
             <div>
                 <ul class="footerList">
                     <li class=" footerItem">
-                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </li>
                     <li class="footerItem">
-                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li class="footerItem">
-                        <a href="#"><i class="fa-solid fa-house"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </li>
+                    <li class="footerItem">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+
+
                 </ul>
             </div>
 
