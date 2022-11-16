@@ -1,11 +1,4 @@
-// function heroBtnMouseOver(){
-//     document.getElementById('heroBuyBtn').style.color = "white";
-//     document.getElementById('heroBuyBtn').style.backgroundColor="black";
-// }
-// function heroBtnMouseOut(){
-//     document.getElementById('heroBuyBtn').style.color = "#F8EDE5";
-//     document.getElementById('heroBuyBtn').style.backgroundColor="#3C3633";
-// }
+// Function In Collection Part
 
 
 
@@ -24,4 +17,25 @@ function productCardMouseOut(cardIndex){
     document.getElementById("card"+cardIndex+"name").style.visibility ="visible";
 
 }
+
+// Function In New Collection Part
+
+function NewColCardMouseOver(cardIndex){
+    let card = document.getElementById("NewColCard" + cardIndex); 
+    card.style.backgroundImage = "url('./images/NewColF" +cardIndex+"P2.png')";
+    document.getElementById("NewCol" + cardIndex + "image").style.visibility ="hidden";
+    document.getElementById("NewCol" + cardIndex + "Name").style.display="none";
+    document.getElementById("NewCol" + cardIndex + "Price").style.display ="none";
+    document.getElementById("NewCol" + cardIndex + "button").style.display ="inline-block";
+}
+
+function NewColCardMouseOut(cardIndex){
+    let card= document.getElementById("NewColCard"+cardIndex);
+    card.style.backgroundImage = "";
+    document.getElementById("NewCol"+ cardIndex+"image").style.visibility ="visible";
+    document.getElementById("NewCol" + cardIndex + "Name").style.display="block";
+    document.getElementById("NewCol" + cardIndex + "Price").style.display ="block";
+    document.getElementById("NewCol" + cardIndex + "button").style.display ="none";
+}
+    
 

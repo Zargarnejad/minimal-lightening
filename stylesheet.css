@@ -93,6 +93,26 @@ h6 {
     border: none; */
 
 }
+.newCollctionBtn {
+margin-left: 75px;
+margin-bottom: 25px;
+color:#F8EDE5;
+background-color: #3C3633;
+box-sizing: content-box;
+text-align: center;
+align-items: center;
+padding: 1rem;
+border-radius: 5px;
+letter-spacing: 0.25;
+font-size: 15px;
+border:none;
+display:none;
+}
+.newCollctionBtn:hover{
+    color:white;
+    background-color: black;
+    display:none;
+}
 
 .navContainer {
     background-color: #F8EDE5;
@@ -186,7 +206,7 @@ button {
     align-content: center;
     text-align: center;
 }
-.showProductCategories a{ 
+.showProductCategories div.title a{ 
     color:black;
     text-decoration: underline;
     margin-top: 15px;
@@ -217,6 +237,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    text-decoration: none;
 
 }
 
