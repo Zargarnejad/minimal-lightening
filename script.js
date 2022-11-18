@@ -38,4 +38,20 @@ function NewColCardMouseOut(cardIndex){
     document.getElementById("NewCol" + cardIndex + "button").style.display ="none";
 }
     
+// Function for showing pictures of product in "product detail page"
 
+
+function productPhotosMouseOver(index){
+    let mainPic = document.getElementById("middlePic");
+    let pic = document.getElementById("pic"+index);
+    // pic.style.backgroundColor ="white";
+    mainPic.src="./images/smallPhoto"+index+".png";
+    pic.style.boxShadow ="2px 5px 4px #A1A1A1" ;
+    
+}
+
+function productPhotosMouseOut(index){
+    let pic = document.getElementById("pic"+index);
+    pic.style.boxShadow ="1px 4px 4px #c5c3c3" ;
+    
+}

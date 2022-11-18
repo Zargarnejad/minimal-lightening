@@ -1,125 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>product-detail</title>
-        <script src="https://kit.fontawesome.com/f998ffa803.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="stylesheet.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet">
-    
-    </head>
-    
-    <body>
-        <div class="mainContainer">
-    
-            <header>
-                <div class="pageHead">
-                    <div class="topTitle">
-                        <p>Check Lightenings In Your Place And Return If It Dosen't Match</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-detail</title>
+    <script src="https://kit.fontawesome.com/f998ffa803.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="mainContainer">
+
+        <header>
+            <div class="pageHead">
+                <div class="topTitle">
+                    <p>Check Lightenings In Your Place And Return If It Dosen't Match</p>
+                </div>
+                <nav class="navContainer">
+                    <div class="navList"> <img class="navList logoInfo" src="./images/logo.png" /></div>
+                    <div>
+                        <ul class="navList">
+                            <li class="navItem">
+                                <a href="#">Categories</a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#">Collections</a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#">Customization</a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#">Support</a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <nav class="navContainer">
-                        <div class="navList"> <img class="navList logoInfo" src="./images/logo.png" /></div>
-                        <div>
-                            <ul class="navList">
-                                <li class="navItem">
-                                    <a href="#">Categories</a>
-                                </li>
-                                <li class="navItem">
-                                    <a href="#">Collections</a>
-                                </li>
-                                <li class="navItem">
-                                    <a href="#">Customization</a>
-                                </li>
-                                <li class="navItem">
-                                    <a href="#">Support</a>
-                                </li>
-                                <li class="navItem">
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="navList">
-                                <li class="navItem">
-                                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                </li>
-                                <li class="navItem">
-                                    <a href="#"><i class="fa-solid fa-user"></i></a>
-                                </li>
-                                <li class="navItem">
-                                    <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <div>
+                        <ul class="navList">
+                            <li class="navItem">
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#"><i class="fa-solid fa-user"></i></a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="showProductDetails">
+            <div class="productPhotosByDetail">
+                <div class="middleMainPhoto">
+                    <img id="middlePic" src="./images/smallPhoto1.png">
                 </div>
-            </header>
-            <section class="showProductDetails">
-                <div class="CustomizationHomepagePhoto"></div>
-                <div class="customizationInfo">
-                    <h4>CARRONADE Noric Low</h4>
-                    <p>You can order a custom design for your favorite lamp.
-                        If you not like any of the designs ....
-                    </p>
-                    <a>READ MORE</a>
-                    <h4>Colors</h4>
-                    <button class="mainBtn">ADD TO CART</button>
+                <div class="smallPhotoCantainer">
+                    <div id="pic1" class="smallPhoto" onmouseout="productPhotosMouseOut(1)"
+                        onmouseover="productPhotosMouseOver(1)"><img class="tumbnailPhoto"
+                            src="./images/smallPhoto1.png" /></div>
+                    <div id="pic2" class="smallPhoto" onmouseout="productPhotosMouseOut(2)"
+                        onmouseover="productPhotosMouseOver(2)"><img class="tumbnailPhoto"
+                            src="./images/smallPhoto2.png" /></div>
+                    <div id="pic3" class="smallPhoto" onmouseout="productPhotosMouseOut(3)"
+                        onmouseover="productPhotosMouseOver(3)"><img class="tumbnailPhoto"
+                            src="./images/smallPhoto3.png" /></div>
+                    <div id="pic4" class="smallPhoto" onmouseout="productPhotosMouseOut(4)"
+                        onmouseover="productPhotosMouseOver(4)"><img class="tumbnailPhoto"
+                            src="./images/smallPhoto4.png" /></div>
+                    <div id="pic5" class="smallPhoto" onmouseout="productPhotosMouseOut(5)"
+                        onmouseover="productPhotosMouseOver(5)"><img class="tumbnailPhoto"
+                            src="./images/smallPhoto5.png" /></div>
+                    <div id="pic6" class="smallPhoto" onmouseout="productPhotosMouseOut(6)"
+                        onmouseover="productPhotosMouseOver(6)"><img class="tumbnailPhoto"
+                            src="./images/smallPhoto6.png" /></div>
                 </div>
-    
-            </section>
-            <section class="showProductCategories">
-                <div class="title">
-                    <h4>Related Products </h4>
-                    <a>SEE MORE </a>
+            </div>
+            <div class="productDetailInfo">
+                <p class="bodyfont1">Floor</p>
+                <h6>CARRONADE Noric Low</h6>
+                <p>You can order a custom design for your favorite lamp.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dignissimos dicta itaque, rem dolor pariatur eum autem ab libero est obcaecati!
+                    At, sequi pariatur! Delectus velit voluptas eos. Corrupti, quaerat beatae?
+                </p>
+                <a>READ MORE</a>
+                <br>
+                <div>
+                    <h6>Colors</h6>
+                    <br>
+                    <div>
+                        <!-- <div class="colorchoosingBox"></div>
+                        <div class="colorchoosingBox"></div> -->
+                        <button class="colorchoosingBox blackProduct"><i class="fa-solid fa-check"></i></button>
+                        <button class="colorchoosingBox sandProduct"><i class="fa-solid fa-check"></i></button>
+                        <button class="mainLightBtn">CUSTOMIZE COLOR</button>
+
+                    </div>
                 </div>
                 <br>
-                <div class="productSCategoriesShowPart">
-                    <div class="productCard" id="NewColCard1" onmouseover="NewColCardMouseOver(1)" onmouseout="NewColCardMouseOut(1)">
-    
-                        <div class="categorySampleImage"><img id="NewCol1image" class="photoShowFormat"
-                                src="./images/NewColF1P1.png"></div>
-                        <p  id="NewCol1Name" class="categoryName">Corranede High Black</p>
-                        <p  id="NewCol1Price"class="categoryName">EUR 1,811.00</p> 
-                        <button id="NewCol1button" class="newCollctionBtn">SEE PRODUCT</button>
-                    </div>
-                    <div class="productCard" id="NewColCard2" onmouseover="NewColCardMouseOver(2)" onmouseout="NewColCardMouseOut(2)" >
-    
-                        <div class="categorySampleImage"><img id="NewCol2image" class="photoShowFormat"
-                                src="./images/NewColF2P1.png"></div>
-                        <p id="NewCol2Name" class="categoryName">Hello Dude Collections</p>
-                        <p  id="NewCol2Price" class="categoryName">EUR 1,542.00</p>
-                        <button id="NewCol2button" class="newCollctionBtn">SEE PRODUCT</button>
-    
-                    </div>
-                    <div class="productCard" id="NewColCard3" onmouseover="NewColCardMouseOver(3)" onmouseout="NewColCardMouseOut(3)">
-    
-                        <div class="categorySampleImage"><img id="NewCol3image" class="photoShowFormat"
-                                src="./images/NewColF3P1.png"></div>
-                        <p  id="NewCol3Name" class="categoryName">Cirrata Collections</p>
-                        <p  id="NewCol3Price" class="categoryName">EUR 1,542.00</p>
-                        <button id="NewCol3button" class="newCollctionBtn">SEE PRODUCT</button>
-    
-                    </div>
-                    <div class="productCard" id="NewColCard4" onmouseover="NewColCardMouseOver(4)" onmouseout="NewColCardMouseOut(4)">
-                        <div class="categorySampleImage"><img id="NewCol4image" class="photoShowFormat"
-                                src="./images/NewColF4P1.png"></div>
-                        <p id="NewCol4Name" class="categoryName">Solstic Collections</p>
-                        <p  id="NewCol4Price" class="categoryName">EUR 1,542.00</p>
-                        <button id="NewCol4button" class="newCollctionBtn">SEE PRODUCT</button>
-    
-    
-                    </div>
+                <div>
+                    <br>
+                    <h6>EUR 1,542.00</h6>
+                    <p>In stock (shipping within 1-2 working days)</p>
+                    <button class="mainLightBtn">- 1 +</button>
+                    <button class="mainDarkBtn"> ADD TO CART</button>
                 </div>
-            </section>
+                <br>
+                <br>
+                <br>
+                <div>See Specifications</div>
+                <br>
+                <div>See Instruction</div>
 
 
-        
+            </div>
+
+        </section>
+        <section id="relatedProduct" class="showProductCategories">
+            <div class="title">
+                <h4>Related Products </h4>
+                <a>SEE MORE </a>
+            </div>
+            <br>
+            <div class="productSCategoriesShowPart">
+                <div class="productCard" id="NewColCard5" onmouseover="NewColCardMouseOver(5)"
+                    onmouseout="NewColCardMouseOut(5)">
+
+                    <div class="categorySampleImage"><img id="NewCol5image" class="photoShowFormat"
+                            src="./images/NewColF5P1.png"></div>
+                    <p id="NewCol5Name" class="categoryName">Corranede High Black</p>
+                    <p id="NewCol5Price" class="categoryName">EUR 1,811.00</p>
+                    <button id="NewCol5button" class="newCollctionBtn">SEE PRODUCT</button>
+                </div>
+                <div class="productCard" id="NewColCard6" onmouseover="NewColCardMouseOver(6)"
+                    onmouseout="NewColCardMouseOut(6)">
+
+                    <div class="categorySampleImage"><img id="NewCol6image" class="photoShowFormat"
+                            src="./images/NewColF6P1.png"></div>
+                    <p id="NewCol6Name" class="categoryName">Hello Dude Collections</p>
+                    <p id="NewCol6Price" class="categoryName">EUR 1,542.00</p>
+                    <button id="NewCol6button" class="newCollctionBtn">SEE PRODUCT</button>
+
+                </div>
+                <div class="productCard" id="NewColCard7" onmouseover="NewColCardMouseOver(7)"
+                    onmouseout="NewColCardMouseOut(7)">
+
+                    <div class="categorySampleImage"><img id="NewCol7image" class="photoShowFormat"
+                            src="./images/NewColF7P1.png"></div>
+                    <p id="NewCol7Name" class="categoryName">Cirrata Collections</p>
+                    <p id="NewCol7Price" class="categoryName">EUR 1,542.00</p>
+                    <button id="NewCol7button" class="newCollctionBtn">SEE PRODUCT</button>
+
+                </div>
+                <div class="productCard" id="NewColCard8" onmouseover="NewColCardMouseOver(8)"
+                    onmouseout="NewColCardMouseOut(8)">
+                    <div class="categorySampleImage"><img id="NewCol8image" class="photoShowFormat"
+                            src="./images/NewColF8P1.png"></div>
+                    <p id="NewCol8Name" class="categoryName">Solstic Collections</p>
+                    <p id="NewCol8Price" class="categoryName">EUR 1,542.00</p>
+                    <button id="NewCol8button" class="newCollctionBtn">SEE PRODUCT</button>
+
+
+                </div>
+            </div>
+        </section>
+
+
         <footer class="footerContainer">
 
             <div class="footerList"> <img class="footerList footerlogoInfo" src="./images/FootelLogo.png" /></div>
@@ -139,7 +197,7 @@
                     </li>
                 </ul>
             </div>
-           
+
             <div>
                 <ul class="footerList">
                     <li class=" footerItem">
@@ -161,7 +219,8 @@
 
         </footer>
     </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

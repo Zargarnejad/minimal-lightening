@@ -44,7 +44,40 @@ h6 {
     font-size: 21px;
     letter-spacing: 0.15px;
 }
+.subtitle1{
+    font-weight: normal;
+    font-size: 17px;
+    letter-spacing: 0.15px;
+}
+.subtitle2{
+    font-weight:normal;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+}
+.bodyfont1{
+    font-weight:normal;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 
+}
+.bodyfont2{
+    font-weight:normal;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+
+}
+.caption{
+    font-weight:normal;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+
+}
+.overline{
+    font-weight:normal;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+
+}
 .mainContainer {
     margin-left: 15%;
     margin-right: 15%;
@@ -61,13 +94,14 @@ h6 {
     font-size: 1rem;
     min-height: 40px;
     box-sizing: content-box;
+    border: 1px solid #c5c3c3;
 }
 
 .topTitle p {
     padding: 0.5rem;
 }
 
-.mainBtn {
+.mainDarkBtn {
     color: #F8EDE5;
     background-color: #3C3633;
     box-sizing: content-box;
@@ -81,7 +115,7 @@ h6 {
     letter-spacing: 0.25px;
 
 }
-.mainBtn:hover {
+.mainDarkBtn:hover {
     color:white;
     background-color:black;
     /* box-sizing: content-box;
@@ -121,6 +155,7 @@ display:none;
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
+    border: 1px solid #c5c3c3;
 
 }
 
@@ -232,7 +267,7 @@ button {
     border-radius: 10px;
     width: 22%;
     height: 90%;
-    box-shadow: 1px 4px #c5c3c3;
+    box-shadow: 1px 4px 4px #c5c3c3;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -398,10 +433,133 @@ button {
 .showProductDetails{
     background-color: white;
     width: 100%;
-    height: 700px;
+    height: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-bottom: 60px;
 }
+
+.productPhotosByDetail {
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 850px;
+    /* border-radius: 10px 0 0 10px; */
+    background-color:#ECEAEA;
+    text-align: center;
+    padding-top: 2rem;
+}
+.middleMainPhoto{
+    width: 60%;
+    height: 600px;
+    background-color: #eceaea;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 2rem;
+
+}
+.middleMainPhoto img{
+    width: 100%;
+}
+.smallPhotoCantainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.smallPhoto{
+    width: 75px;
+    height:75px;
+    background-color: #eceaea
+    ;
+    border-radius: 5px;
+    box-shadow: 1px 4px 4px #c5c3c3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+.tumbnailPhoto{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+}
+.productDetailInfo{
+    background-color: #F8EDE5;
+    color: black;
+    width: 50%;
+    height: 850px;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+.productDetailInfo p {
+    color: black;
+    align-items: center;
+    text-align: left;
+    /* padding-top: 0.75rem; */
+    margin-right:2rem;
+    line-height:1.75rem;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    margin-top: 10px;
+}
+.productDetailInfo a{
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-size: 15px;
+    display: block;
+}
+.mainLightBtn {
+    color: black;
+    background-color: white;
+    box-sizing: content-box;
+    min-height: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+
+}
+.mainLightBtn:hover {
+    color:black;
+    background-color:white;
+    box-shadow: 1px 4px 4px #c5c3c3;
+    border: 2px solid black;
+    
+
+}
+/* #colorPart{
+    align-items: center;
+    height: max-content;
+} */
+
+.colorchoosingBox{
+    color: black;
+    background-color: white;
+    box-sizing: content-box;
+    min-height: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+
+}
+.blackProduct{
+    background-color: black;
+    color:white;
+}
+.sandProduct{
+    background-color: #ECEAEA;
+    color:black;
+}
+
+/* #relatedProduct{
+    margin-top: 230px;
+} */
+   
