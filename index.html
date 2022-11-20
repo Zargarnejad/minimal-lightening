@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body onload="homePageLoad()">
     <div class="mainContainer">
 
         <header>
@@ -71,14 +71,15 @@
 
             <h4>Collections</h4>
             <br>
-            <div class="productSCategoriesShowPart">
-                <a href="google.com" onmouseover="productCardMouseOver(1)" onmouseout="productCardMouseOut(1)"
+            <div id="collectionContainer" class="productSCategoriesShowPart">
+ <!--               <a href="google.com" onmouseover="productCardMouseOver(1)" onmouseout="productCardMouseOut(1)"
                     class="productCard" id="ColCard1">
-                    <div class="categorySampleImage"><img id="card1image" class="photoShowFormat"
-                            src="./images/ColF1P1.png"></div>
+                    <div class="categorySampleImage">
+                        <img id="card1image" class="photoShowFormat" src="./images/ColF1P1.png"/>
+                    </div>
                     <p id="card1name" class="categoryoneLineName">Blockchain Collections</p>
                 </a>
-
+ 
                 <a href="google.com" onmouseover="productCardMouseOver(2)" onmouseout="productCardMouseOut(2)" class="productCard"
                     id="ColCard2">
 
@@ -98,7 +99,7 @@
                     <div class="categorySampleImage"><img id="card4image" class="photoShowFormat"
                             src="./images/ColF4P1.jpg"></div>
                     <p id="card4name" class="categoryoneLineName">Solstic Collections</p>
-                </a>
+                </a> -->
             </div>
         </section>
         <section class="bestSelling">
@@ -126,9 +127,9 @@
 
                     <div class="categorySampleImage"><img id="NewCol1image" class="photoShowFormat"
                             src="./images/NewColF1P1.png"></div>
-                    <p  id="NewCol1Name" class="categoryName">Blockchain Collections</p>
+                    <p  id="NewCol1Name" class="categoryName">Corranede Nordic Low </p>
                     <p  id="NewCol1Price"class="categoryName">EUR 1,542.00</p> 
-                    <button id="NewCol1button" class="newCollctionBtn">SEE PRODUCT</button>
+                    <button id="NewCol1button" class="newCollctionBtn" onclick="onClickSeeProduct()">SEE PRODUCT</button>
                 </div>
                 <div class="productCard" id="NewColCard2" onmouseover="NewColCardMouseOver(2)" onmouseout="NewColCardMouseOut(2)" >
 
