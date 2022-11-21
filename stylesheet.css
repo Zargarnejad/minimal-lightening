@@ -531,6 +531,66 @@ button {
     
 
 }
+.inputStyle{
+    color:black;
+    background-color: white;
+    text-align: center;
+    box-sizing: content-box;
+    min-height: fit-content;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    width: 50px;
+}
+.mainLightBtnMini{
+    color: black;
+    background-color: white;
+    box-sizing: content-box;
+    min-height: fit-content;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #F8EDE5;
+    
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    width: 10px;
+    display: inline-block;
+
+}
+ div.mainLightBtnMini {
+    color: black;
+    background-color: white;
+    box-sizing: content-box;
+    min-height: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    width: 15px;
+    display: inline-block;
+}
+button.mainLightBtnMini{
+    background-color: #F8EDE5;
+    box-shadow: 1px 2px 2px #b6b0ac;
+}
+
+.colorBoxName{
+    background-color:#F8EDE5;
+    color: black;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 2px;
+    width: 43px;
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
 /* #colorPart{
     align-items: center;
     height: max-content;
@@ -548,6 +608,7 @@ button {
     border: 1px solid black;
     font-size: 15px;
     letter-spacing: 0.25px;
+    display: inline-block;
 
 }
 .blackProduct{
@@ -557,6 +618,7 @@ button {
 .sandProduct{
     background-color: #ECEAEA;
     color:black;
+
 }
 
 /* #relatedProduct{
