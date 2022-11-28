@@ -559,6 +559,10 @@ button {
     display: inline-block;
 
 }
+.cardMiniBtn{
+    background-color: #eceaea !important;
+}
+
  div.mainLightBtnMini {
     color: black;
     background-color: white;
@@ -584,11 +588,12 @@ button.mainLightBtnMini{
     color: black;
     text-align: center;
     box-sizing: content-box;
-    padding: 2px;
-    width: 43px;
+    padding: 1px;
+    width: 30px;
     display: inline-block;
     margin-top: 2px;
-    margin-left: 2px;
+    margin-left: 1px;
+    font-size: small;
 }
 
 /* #colorPart{
@@ -627,22 +632,21 @@ button.mainLightBtnMini{
    
 
 /* CARD PAGE CLASSES */
+
+
 .showCard{
     background-color: #ECEAEA;
     color:black;
-    height: 500px;
+    height: 400px;
     padding:0 2rem;
 
-}
- .firstPart p{
-    display:inline-block;
-    height:100px;
 }
 
 .breadCrumbCantainer{
     background-color: #f6f6f6;
     color:black;
     padding:20px 40px;
+    text-align: center;
 
 }
 .breadCrumb{
@@ -661,10 +665,99 @@ button.mainLightBtnMini{
     padding: 10px;
     content: "/\00a0";
 }
+
+.cardTotal{
+    background-color: #ECEAEA;
+}
 .cartPageImage{
     background-color: #ECEAEA;
     width: 100px;
     height: 150px;
     border-radius: 5px;
     margin:1rem;
+}
+.cardContainer{
+    display:grid;
+    grid-template-columns: 1.75fr 1fr 0.5fr 1fr;
+    grid-template-rows: 0.2f 1fr ;
+    /* row-gap:0.5rem; */
+margin-right: 1rem;
+margin-left: 1rem;
+
+padding-top: 1rem;
+background-color: #eceaea;
+
+}
+.cardContainer hr{
+    grid-column: 1 / span 4;
+    margin-top: 0.5rem;
+    margin-left:1rem;
+     margin-right:1rem;
+      margin-bottom:1rem;
+
+    
+}
+
+.cardCell{
+    display: flex;
+    /* background-color:#eceaea; */
+    color: black; 
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 1rem;
+
+}
+.proInfo{
+    text-align: left;
+}
+.proInfo a{
+    color: black;
+}
+
+.lastLine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: large;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+    
+}
+.lastLine a{
+    color: black;
+    font-weight: normal;
+    
+}
+.lastLineItem{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-weight: bold;
+    width: 40%;
+}
+
+#checkOutBtn{
+    width: 40%;
+}
+
+
+/* Class for order confirmed page */
+
+.confirmedInfo{
+    background-color: #ECEAEA;
+    color:black;
+padding:10%;
+    text-align: center;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+
 }
