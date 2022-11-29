@@ -30,10 +30,10 @@ function createProductCollection() {
         collectionbox.id = "ColCard" + collectionItem.id
 
         collectionbox.addEventListener("mouseover", function () {
-            NewColCardMouseOver(collectionItem.id)
+            productCardMouseOver(collectionItem.id)
         })
         collectionbox.addEventListener("mouseout", function () {
-            NewColCardMouseOut(collectionItem.id)
+            productCardMouseOut(collectionItem.id)
         })
         collectionContainer.appendChild(collectionbox)
 
@@ -121,8 +121,8 @@ function createNewCollection() {
         newCollectionBox.appendChild(newCollectionItemPrice)
 
         let newCollectionItemBtn = document.createElement("button")
-        newCollectionItemBtn.addEventListener("click", function(){
-         onClickSeeProduct(collectionItem.id)
+        newCollectionItemBtn.addEventListener("click", function () {
+            onClickSeeProduct(collectionItem.id)
         })
         newCollectionItemBtn.innerText = "SEE PRODUCT"
         newCollectionItemBtn.id = "NewCol" + collectionItem.id + "button";
