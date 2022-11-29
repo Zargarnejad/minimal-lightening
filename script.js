@@ -154,9 +154,6 @@ function NewColCardMouseOut(cardIndex) {
     document.getElementById("NewCol" + cardIndex + "button").style.display = "none";
 }
 
-function onClickSeeProduct(index) {
-    window.location = "productdetail.html"
-}
 
 
 
@@ -179,10 +176,48 @@ function productPhotosMouseOut(index) {
 
 }
 
+function onClickBlackColorBtn(blackBtn) {
+
+//    let middleBlackPic= document.getElementById(middlePic);
+//    middleBlackPic.style.backgroundImage="url('.images????)";
+   document.getElementById(middlePic).style.display=none;
+
+//     function productPhotosMouseOver(index){
+//         let mainPic = document.getElementById("middlePic");
+//     let pic = document.getElementById("pic" + index);
+//     // pic.style.backgroundColor ="white";
+//     mainPic.src = "./images/smallPhoto" + index + ".png";
+//     pic.style.boxShadow = "2px 5px 4px #A1A1A1";
+
+// }
+
+// function productPhotosMouseOut(index) {
+//     let pic = document.getElementById("pic" + index);
+//     pic.style.boxShadow = "1px 4px 4px #c5c3c3";
+
+// }
+
+    }
+
 
 
 function homePageLoad() {
 
     createProductCollection()
     createNewCollection()
+}
+
+
+// Onclick Function For Buttons
+
+function onClickSeeProduct(target) {
+    window.location = "productdetail.html"
+}
+
+function onClickcheckOutBtn(target){
+    window.location ="place-order.html";
+}
+
+function onClickaddToCardBtn(target){
+    window.location="card.html";
 }
