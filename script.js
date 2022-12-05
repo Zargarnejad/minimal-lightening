@@ -10,7 +10,7 @@ const productCollection = [
 ];
 
 const newCollectionProduct = [
-    { id: 1, name: "Corranede Low Black", price: 1542.00, mainPic: "./images/NewColF1P1.png", hoverPic: "./images/NewColF1P2.png" },
+    { id: 1, name: "Corranede Low Black", price: 1542.00, mainPic: "./images/NewColF1P1.png", hoverPic: "./images/NewColF1P2.png"},
     { id: 2, name: "Corranede Lamp Sand", price: 902.00, mainPic: "./images/NewColF2P1.png", hoverPic: "./images/NewColF2P2.png" },
     { id: 3, name: "Corranede High Black", price: 1811.00, mainPic: "./images/NewColF3P1.png", hoverPic: "./images/ColF3P2.png" },
     { id: 4, name: "Corranede Lamp Sand", price: 902.00, mainPic: "./images/NewColF4P1.png", hoverPic: "./images/NewColF4P2.png" }
@@ -178,26 +178,26 @@ function productPhotosMouseOut(index) {
 
 function onClickBlackColorBtn(blackBtn) {
 
-//    let middleBlackPic= document.getElementById(middlePic);
-//    middleBlackPic.style.backgroundImage="url('.images????)";
-   document.getElementById(middlePic).style.display=none;
+    //    let middleBlackPic= document.getElementById(middlePic);
+    //    middleBlackPic.style.backgroundImage="url('.images????)";
+    document.getElementById(middlePic).style.display = none;
 
-//     function productPhotosMouseOver(index){
-//         let mainPic = document.getElementById("middlePic");
-//     let pic = document.getElementById("pic" + index);
-//     // pic.style.backgroundColor ="white";
-//     mainPic.src = "./images/smallPhoto" + index + ".png";
-//     pic.style.boxShadow = "2px 5px 4px #A1A1A1";
+    //     function productPhotosMouseOver(index){
+    //         let mainPic = document.getElementById("middlePic");
+    //     let pic = document.getElementById("pic" + index);
+    //     // pic.style.backgroundColor ="white";
+    //     mainPic.src = "./images/smallPhoto" + index + ".png";
+    //     pic.style.boxShadow = "2px 5px 4px #A1A1A1";
 
-// }
+    // }
 
-// function productPhotosMouseOut(index) {
-//     let pic = document.getElementById("pic" + index);
-//     pic.style.boxShadow = "1px 4px 4px #c5c3c3";
+    // function productPhotosMouseOut(index) {
+    //     let pic = document.getElementById("pic" + index);
+    //     pic.style.boxShadow = "1px 4px 4px #c5c3c3";
 
-// }
+    // }
 
-    }
+}
 
 
 
@@ -214,10 +214,24 @@ function onClickSeeProduct(target) {
     window.location = "productdetail.html"
 }
 
-function onClickcheckOutBtn(target){
-    window.location ="place-order.html";
+function onClickcheckOutBtn(target) {
+    window.location = "place-order.html";
 }
 
-function onClickaddToCardBtn(target){
-    window.location="card.html";
+function onClickaddToCardBtn(target) {
+    window.location = "card.html";
 }
+
+
+
+////////////////////////////////////////////////////
+
+function onClick(target) {
+    window.location = "target";
+}
+
+function onClickLogo(target) {
+    window.location = "index.html";
+}
+
+//color: [black, sand], photoGallery: [pic1, pic2, pic3, pic4, pic5, pic6], relatedProduct:[pro1,pro2,pro3,pro4]
