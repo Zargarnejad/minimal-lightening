@@ -137,7 +137,7 @@ h6 {
 }
 
 .newCollctionBtn {
-    margin-left: 55px;
+    /* margin-left: 55px; */
     margin-bottom: 25px;
     color: #F8EDE5;
     background-color: #3C3633;
@@ -291,6 +291,7 @@ button {
     background-position: center;
     background-size: cover;
     text-decoration: none;
+    text-align: center;
 
 }
 
@@ -603,14 +604,13 @@ div.mainLightBtnMini {
     box-sizing: content-box;
     min-height: fit-content;
     text-align: center;
-    text-decoration: underline;
     align-items: center;
     padding: 0.8rem;
     border-radius: 5px;
     border: 1px solid #F8EDE5;
-    font-size: 19px;
+    font-size: 20px;
     letter-spacing: 0.25px;
-    width: 15px;
+    width: 10px;
     display: inline-block;
     /* box-shadow: 0.5px 0.5px 0.5px #b6b0ac; */
     margin-left: 1px;

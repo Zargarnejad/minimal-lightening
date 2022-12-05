@@ -103,7 +103,7 @@ function createNewCollection() {
         newCollectionBox.appendChild(newcollectionDiv)
 
         let newCollectionItemMainImage = document.createElement("img")
-        newCollectionItemMainImage.src = collectionItem.mainPic;
+        newCollectionItemMainImage.src = "./images/products/"+collectionItem.id+"/main.png";
         newCollectionItemMainImage.id = "NewCol" + collectionItem.id + "image";
         newCollectionItemMainImage.className = "photoShowFormat";
         newcollectionDiv.appendChild(newCollectionItemMainImage);
@@ -138,8 +138,8 @@ function createNewCollection() {
 
 function NewColCardMouseOver(cardIndex) {
     let card = document.getElementById("NewColCard" + cardIndex);
-    card.style.backgroundImage = "url('./images/NewColF" + cardIndex + "P2.png')";
-    document.getElementById("NewCol" + cardIndex + "image").style.visibility = "hidden";
+    card.style.backgroundImage = "url(./images/products/" +cardIndex+ "/hover.png)";
+        document.getElementById("NewCol" + cardIndex + "image").style.visibility = "hidden";
     document.getElementById("NewCol" + cardIndex + "Name").style.display = "none";
     document.getElementById("NewCol" + cardIndex + "Price").style.display = "none";
     document.getElementById("NewCol" + cardIndex + "button").style.display = "inline-block";
