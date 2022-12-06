@@ -176,26 +176,16 @@ function productPhotosMouseOut(index) {
 
 }
 
-function onClickBlackColorBtn(blackBtn) {
+function onClickBlackColorBtn() {
+    document.getElementById("middlePic").src="./images/products/1/pic1black.png"
 
-    //    let middleBlackPic= document.getElementById(middlePic);
-    //    middleBlackPic.style.backgroundImage="url('.images????)";
-    document.getElementById(middlePic).style.display = none;
+    document.getElementById("tumPic1").src="./images/products/1/pic1black.png"
+    document.getElementById("tumPic2").src="./images/products/1/pic2black.png"
+    document.getElementById("tumPic3").src="./images/products/1/pic3black.png"
+    document.getElementById("tumPic4").src="./images/products/1/pic4black.png"
+    document.getElementById("tumPic5").src="./images/products/1/pic5black.png"
+    document.getElementById("tumPic6").src="./images/products/1/pic6black.png"
 
-    //     function productPhotosMouseOver(index){
-    //         let mainPic = document.getElementById("middlePic");
-    //     let pic = document.getElementById("pic" + index);
-    //     // pic.style.backgroundColor ="white";
-    //     mainPic.src = "./images/smallPhoto" + index + ".png";
-    //     pic.style.boxShadow = "2px 5px 4px #A1A1A1";
-
-    // }
-
-    // function productPhotosMouseOut(index) {
-    //     let pic = document.getElementById("pic" + index);
-    //     pic.style.boxShadow = "1px 4px 4px #c5c3c3";
-
-    // }
 
 }
 
@@ -244,7 +234,7 @@ function onClickPlus() {
     quantity = quantity + 1;
     document.getElementById("quantity").innerHTML = quantity;
     document.getElementById("totalPrice").innerHTML = "EUR " + (price * quantity);
-    document.getElementById("subTotalPrice").innerText = "Subtotal EUR " + (price * quantity);
+    document.getElementById("subTotalPrice").innerText = "Subtotal EUR "+ (price * quantity);
 
 }
 
