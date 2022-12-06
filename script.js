@@ -10,10 +10,10 @@ const productCollection = [
 ];
 
 const newCollectionProduct = [
-    { id: 1, name: "Corranede Low Black", price: 1542.00, mainPic: "./images/NewColF1P1.png", hoverPic: "./images/NewColF1P2.png"},
-    { id: 2, name: "Corranede Lamp Sand", price: 902.00, mainPic: "./images/NewColF2P1.png", hoverPic: "./images/NewColF2P2.png" },
-    { id: 3, name: "Corranede High Black", price: 1811.00, mainPic: "./images/NewColF3P1.png", hoverPic: "./images/ColF3P2.png" },
-    { id: 4, name: "Corranede Lamp Sand", price: 902.00, mainPic: "./images/NewColF4P1.png", hoverPic: "./images/NewColF4P2.png" }
+    { id: 1, name: "Corranede Low Black", price: 1542.00 },
+    { id: 2, name: "Corranede Lamp Sand", price: 902.00 },
+    { id: 3, name: "Corranede High Black", price: 1811.00 },
+    { id: 4, name: "Corranede Lamp Sand", price: 902.00 }
 
 ];
 
@@ -103,7 +103,7 @@ function createNewCollection() {
         newCollectionBox.appendChild(newcollectionDiv)
 
         let newCollectionItemMainImage = document.createElement("img")
-        newCollectionItemMainImage.src = "./images/products/"+collectionItem.id+"/main.png";
+        newCollectionItemMainImage.src = "./images/products/" + collectionItem.id + "/main.png";
         newCollectionItemMainImage.id = "NewCol" + collectionItem.id + "image";
         newCollectionItemMainImage.className = "photoShowFormat";
         newcollectionDiv.appendChild(newCollectionItemMainImage);
@@ -138,8 +138,8 @@ function createNewCollection() {
 
 function NewColCardMouseOver(cardIndex) {
     let card = document.getElementById("NewColCard" + cardIndex);
-    card.style.backgroundImage = "url(./images/products/" +cardIndex+ "/hover.png)";
-        document.getElementById("NewCol" + cardIndex + "image").style.visibility = "hidden";
+    card.style.backgroundImage = "url(./images/products/" + cardIndex + "/hover.png)";
+    document.getElementById("NewCol" + cardIndex + "image").style.visibility = "hidden";
     document.getElementById("NewCol" + cardIndex + "Name").style.display = "none";
     document.getElementById("NewCol" + cardIndex + "Price").style.display = "none";
     document.getElementById("NewCol" + cardIndex + "button").style.display = "inline-block";
@@ -234,4 +234,31 @@ function onClickLogo(target) {
     window.location = "index.html";
 }
 
-//color: [black, sand], photoGallery: [pic1, pic2, pic3, pic4, pic5, pic6], relatedProduct:[pro1,pro2,pro3,pro4]
+// Card page and basket Functions
+
+let price = 1542;
+let quantity = 1;
+let total = price * quantity;
+
+function onClickPlus() {
+    quantity = quantity + 1;
+    document.getElementById("quantity").innerHTML = quantity;
+    document.getElementById("totalPrice").innerHTML = "EUR " + (price * quantity);
+    document.getElementById("subTotalPrice").innerText = "Subtotal EUR " + (price * quantity);
+
+}
+
+
+function onClickMinuse() {
+    if (quantity>1) {
+        quantity = quantity - 1;
+        document.getElementById("quantity").innerHTML = quantity;
+        document.getElementById("totalPrice").innerHTML = "EUR " + (price * quantity);
+        document.getElementById("subTotalPrice").innerText = "Subtotal EUR "+ (price * quantity);
+
+
+    }
+
+}
+
+

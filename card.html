@@ -109,11 +109,11 @@
                 </div>
                 <div class="cardCell">EUR 1,542.00</div>
                 <div class="cardCell ">
-                    <button class="mainLightBtnMini cardMiniBtn">-</button>
-                    <div class="mainLightBtnMini">1</div>
-                    <button class="mainLightBtnMini cardMiniBtn">+</button>
+                    <button class="mainLightBtnMini cardMiniBtn" onclick="onClickMinuse()">-</button>
+                    <div class="mainLightBtnMini" id="quantity">1</div>
+                    <button class="mainLightBtnMini cardMiniBtn" onclick="onClickPlus()">+</button>
                 </div>
-                <div class="cardCell">EUR 1,542.00 </div>
+                <div class="cardCell" id="totalPrice">EUR 1,542.00 </div>
             </div>
             <hr style="margin-left:2rem; margin-right:2rem; margin-bottom:1rem;">
 
@@ -123,14 +123,14 @@
                 </div>
 
                 <div class="lastLineItem">
-                    <p>Subtotal ERU 1,542.00 </p>
+                    <p id="subTotalPrice">Subtotal ERU 1,542.00 </p>
                     <button class="mainDarkBtn" id="checkOutBtn" onclick="onClickcheckOutBtn()">CHECK OUT</button>
                 </div>
             </div>
         </section>
         <footer class="footerContainer">
 
-            <div class="footerList"> <img class="footerList footerlogoInfo" onclick="onClickLogo()" src="./images/FootelLogo.png" /></div>
+            <div class="footerList"> <img class="footerList footerlogoInfo" onclick="onClickLogo()"  src="./images/FootelLogo.png" /></div>
             <div>
                 <ul class="footerList">
                     <li class="footerItem">
