@@ -2,4 +2,5 @@ This project made by me as a final project for ReDI school and also it is my fin
 photos from: (https://www.leklint.com/)
 
 **The screenshot of the home page**
+
 ![The screenshot of the home page](./images/minimal-lightening-home-page.png)
