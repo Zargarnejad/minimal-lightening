@@ -17,6 +17,8 @@ const newCollectionProduct = [
 
 ];
 
+let currentColor="sand";
+
 // Function In Collection Part
 
 // Creating Collection list in Home page with javascript//
@@ -165,7 +167,7 @@ function productPhotosMouseOver(index) {
     let mainPic = document.getElementById("middlePic");
     let pic = document.getElementById("pic" + index);
     // pic.style.backgroundColor ="white";
-    mainPic.src = "./images/smallPhoto" + index + ".png";
+    mainPic.src = "./images/products/1/pic" + index + currentColor +".png";
     pic.style.boxShadow = "2px 5px 4px #A1A1A1";
 
 }
@@ -176,15 +178,31 @@ function productPhotosMouseOut(index) {
 
 }
 
-function onClickBlackColorBtn() {
-    document.getElementById("middlePic").src="./images/products/1/pic1black.png"
+function colorOnClick(color) {
 
-    document.getElementById("tumPic1").src="./images/products/1/pic1black.png"
-    document.getElementById("tumPic2").src="./images/products/1/pic2black.png"
-    document.getElementById("tumPic3").src="./images/products/1/pic3black.png"
-    document.getElementById("tumPic4").src="./images/products/1/pic4black.png"
-    document.getElementById("tumPic5").src="./images/products/1/pic5black.png"
-    document.getElementById("tumPic6").src="./images/products/1/pic6black.png"
+    let currentColorButton = document.getElementById(currentColor + "Btn");
+    currentColorButton.style.border = '1px solid rgb(187, 184, 184)';
+    currentColorButton.style.boxShadow = '';
+
+    let newColorButton = document.getElementById(color + "Btn");
+    newColorButton.style.border = '2px solid darkgray ';
+    newColorButton.style.boxShadow = '1px 2px 4px  rgb(187,184,184)';
+    
+
+
+
+    console.log(currentColorButton)
+    currentColor=color;
+
+    document.getElementById("middlePic").src="./images/products/1/pic1"+ currentColor+".png"
+
+    document.getElementById("tumPic1").src="./images/products/1/pic1"+ currentColor+".png"
+    document.getElementById("tumPic2").src="./images/products/1/pic2"+ currentColor+".png"
+    document.getElementById("tumPic3").src="./images/products/1/pic3"+ currentColor+".png"
+    document.getElementById("tumPic4").src="./images/products/1/pic4"+ currentColor+".png"
+    document.getElementById("tumPic5").src="./images/products/1/pic5"+ currentColor+".png"
+    document.getElementById("tumPic6").src="./images/products/1/pic6"+ currentColor+".png"
+
 
 
 }

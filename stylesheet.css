@@ -121,6 +121,7 @@ h6 {
     border: none;
     font-size: 15px;
     letter-spacing: 0.25px;
+    cursor: pointer;
 
 }
 
@@ -151,6 +152,7 @@ h6 {
     font-size: 15px;
     border: none;
     display: none;
+    cursor: pointer;
 }
 
 .newCollctionBtn:hover {
@@ -652,10 +654,26 @@ button.mainLightBtnMini {
     align-items: center;
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(187, 184, 184);
     font-size: 15px;
     letter-spacing: 0.25px;
     display: inline-block;
+
+}
+.colorchoosingBoxActive {
+    color: black;
+    /* background-color: white; */
+    box-sizing: content-box;
+    min-height: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 184, 184);
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    display: inline-block;
+    box-shadow: 2x solid darkgray;
 
 }
 
@@ -669,6 +687,7 @@ button.mainLightBtnMini {
     color: black;
 
 }
+
 
 /* #relatedProduct{
     margin-top: 230px;
